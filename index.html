@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/estilos.css">
+<head>
+	<title>Sass II</title>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h1>Sass</h1>
+
+			<nav>
+				<ul>
+					<li><a href="#variables">Variables</a></li>
+					<li><a href="#nesting">Nesting</a></li>
+					<li><a href="#partials">Partials</a></li>
+					<li><a href="#extend">Extend</a></li>
+					<li><a href="#mixins">Mixins</a></li>
+					<li><a href="#operadores">Operadores</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="intro">
+		<div class="contenedor">
+			<article>
+				<h2>Introducción a Sass</h2>
+
+				<p>Sass significa “Syntactically Awesome Stylesheets”, es una herramienta escrita en Ruby que nos permite crear hojas de estilos estructuradas, limpias y fáciles de mantener.</p>
+
+				<p>Con SASS vamos a poder escribir hojas de estilo que nos ayudará a generar ficheros CSS más optimizados, incorporando mayor contenido semántico y permitiendo utilizar funcionalidades que normalmente encontraríamos en lenguajes de programación tradicionales, como el uso de variables, creación de funciones, etc.</p>
+
+				<a href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html" target="_blank">Ver más información</a>
+			</article>
+		</div>
+	</section>
+
+	<section class="variables" id="variables">
+		<div class="contenedor">
+			<article>
+				<h2>Variables</h2>
+
+				<p>Las variables son una manera de guardar información que necesites reutilizar en tus hojas de estilos: colores, dimensiones, fuentes o cualquier otro valor. Sass utiliza el símbolo dólar ($) al principio de la palabra clave para crear una variable.</p>
+
+				<p>Estas variables se comportan como atributos CSS, y su valor puede ser cualquier valor que pudiera adquirir cualquier atributo CSS.</p>
+
+				<p>La idea detrás de todo esto es que luego podamos volver a utilizar los mismos valores de una manera rápida, o si es necesario un cambio, podemos declarar el nuevo valor en un solo lugar (la definición de la variable), en lugar de aplicar el cambio manualmente a todas partes afectadas por la propiedad.</p>
+
+				<p>Una buena práctica común consiste en definir todas las variables globales al principio del fichero, para que puedan localizarse rápidamente.</p>
+
+				<div class="ejemplo">
+					<p>$cool-red: #F44336;</p>
+				</div>
+
+				<a href="https://sass-lang.com/guide" target="_blank">Saber más sobre variables</a>
+			</article>
+		</div>
+	</section>
+
+	<section class="nesting" id="nesting">
+		<div class="contenedor">
+			<article>
+				<h2>Nesting</h2>
+
+				<p>HTML sigue una estricta estructura de anidación mientras que CSS, por lo general, es un caos total. Con la anidación de Sass puedes organizar tu hoja de estilo de una manera que se asemeja a la de HTML, lo que reduce la posibilidad de conflictos en el CSS.</p>
+
+				<div class="ejemplo">
+					<p>ul {
+ 					<p>    list-style: none;</p>
+ 					<p>    li {</p>
+					<p>        padding: 15px;</p>
+					<p>        display: inline-block;</p>
+					<p>        a {</p>
+					<p>            text-decoration: none;</p>
+					<p>            font-size: 16px;</p>
+					<p>            color: #444;</p>
+					<p>        }</p>
+					<p>    }</p>
+					<p>}</p>
+				</div>
+
+				<a href="https://sass-lang.com/guide" target="_blank">Saber más sobre nesting</a>
+			</article>
+		</div>
+	</section>
+
+	<section class="partials" id="partials">
+		<div class="contenedor">
+			<article>
+				<h2>Partials</h2>
+
+				<p>Puede crear archivos Sass parciales que contengan pequeños fragmentos de CSS que puede incluir en otros archivos Sass. Esta es una gran manera de modularizar su CSS y ayudar a mantener las cosas más fáciles de mantener. Un parcial es simplemente un archivo Sass nombrado con un subrayado inicial. Puede ponerle un nombre como <strong>_partial.scss</strong>. El guión bajo le permite a Sass saber que el archivo es solo un archivo parcial y que no debe generarse en un archivo CSS. Los parciales Sass se usan con la directiva <strong>@import</strong>.</p>
+
+				<a href="https://sass-lang.com/guide" target="_blank">Saber más sobre partials</a>
+			</article>
+		</div>
+	</section>
+
+	<section class="extend" id="extend">
+		<div class="contenedor">
+			<article>
+				<h2>Extend</h2>
+
+				<p>Esta es una de las características más útiles de Sass. Usar <strong>@extend</strong> le permite compartir un conjunto de propiedades CSS de un selector a otro. Ayuda a mantener tu Sass muy seco. En nuestro ejemplo, vamos a crear una serie simple de mensajes para errores, advertencias y éxitos usando otra característica que va de la mano con las clases extender, marcador de posición. Una clase de marcador de posición es un tipo especial de clase que solo se imprime cuando se extiende, y puede ayudar a mantener su CSS compilado ordenado y limpio.</p>
+
+				<a href="https://sass-lang.com/guide" target="_blank">Saber más sobre extend</a>
+			</article>
+		</div>
+	</section>
+
+	<section class="mixins" id="mixins">
+		<div class="contenedor">
+			<h2>Mixins</h2>
+
+			<p>Nos permiten definir estilos que puedan ser reutilizados en nuestro proyecto.</p>
+			<p>Si se fijan, los conceptos de Extends y Mixins son muy parecidos. Por ello, les comentaba que en un principio es posible confundirlos. Vamos a explicar dos diferencias entre ellos que son claves para un entendimiento más claro:</p>
+			<p>Una de las mayores diferencias con los Extends, es que los Mixins pueden recibir argumentos, los cuales te permitirán producir una gran variedad de estilos con unas simples líneas.</p>
+			<p>La impresión en CSS de los Mixins, no es la misma que tienen los Extends. Estos se imprimen separados en cada uno de los lugares donde fueron declarados.</p>
+			<p>Ya tenemos un poco más claro cuales son las diferencias entre estas importantes características de Sass. Recuerden, los Extends los usaremos para compartir fragmentos de estilos idénticos entre componentes y los Mixins para reutilizar fragmentos de estilos que puedan tener un resultado diferente en cada lugar donde los declaremos.</p>
+			
+			<a href="https://sass-lang.com/guide" target="_blank">Saber más sobre mixins</a>
+		</div>
+	</section>
+
+	<section class="operadores" id="operadores">
+		<div class="contenedor">
+			<h2>Operadores</h2>
+			
+			<p>Con Sass puedes realizar operaciones matemáticas básicas en la misma hoja de estilo y es tan sencillo como poner el símbolo aritmético adecuado.</p>
+			
+			<div class="ejemplo">
+					<p>width: ($ancho/7)*2;</p>
+			</div>
+
+			<p>Aunque vanilla CSS ahora ofrece esta característica también en forma de calc(), la alternativa de Sass es más rápida, tiene operaciones % y puede ser aplicada a una gama más amplia de datos, como por ejemplo colores y strings.</p>
+			 
+			<a href="https://sass-lang.com/guide" target="_blank">Saber más sobre operadores</a>
+		</div>
+	</section>
+</body>
+</html>

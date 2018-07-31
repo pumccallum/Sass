@@ -1,0 +1,18 @@
+@import "variables";
+@import "reset";
+@import "extend";
+@import "mixins";
+
+.contenedor {
+	width:80%;
+	margin:auto;
+}
+
+@import "header";
+@import "intro";
+@import "seccion-variables";
+@import "nesting";
+@import "partials";
+@import "seccion-extend";
+@import "seccion-mixins";
+@import "operadores";

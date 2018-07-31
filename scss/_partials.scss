@@ -1,0 +1,21 @@
+.partials	{
+	padding: 50px 0;
+	background: $colorSass;
+
+	h2 {
+		@extend %titulos;
+		color:$blanco;
+	}
+
+	p {
+		@extend %parrafos;
+		color: $blanco;
+		margin-bottom: 5px;
+	}
+
+	a {
+		@include botton(30px, 5px);
+		background: $colorSass2;
+	}
+
+}

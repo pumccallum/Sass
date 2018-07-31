@@ -1,0 +1,34 @@
+.nesting {
+	padding: 50px 0;
+	background: $colorSass3;
+
+	h2 {
+		@extend %titulos;
+	}
+
+	p {
+		@extend %parrafos;
+	}
+
+	.ejemplo {
+		background: $gris;
+		padding: 10px 20px 3px;
+		display: block;
+		border-radius:5px;
+		width:220px;
+		margin:auto;
+		margin-top:20px;
+		text-align:left;
+		line-height: 100%;
+
+		
+		p {
+			color: $blanco;
+		}
+	}
+
+	a {
+		@include botton(50px, 5px);
+		background: $colorSass;
+	}
+}

@@ -1,0 +1,16 @@
+.intro {
+	padding: 50px 0;
+	background: $colorSass3;
+
+	h2 {
+		@extend %titulos;
+	}//Cierra h2
+
+	p {
+		@extend %parrafos;
+	}//Cierra p
+
+	a {
+		@include botton(20px, 5px);
+	}//Cierra a
+}//Cierra .intro

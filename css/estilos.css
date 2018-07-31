@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif; }
+
+.intro h2, .variables h2, .nesting h2, .partials h2, .extend h2, .mixins h2, .operadores h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #222;
+  font-size: 2rem;
+  margin-bottom: 20px; }
+
+.intro p, .variables p, .nesting p, .partials p, .extend p, .mixins p, .operadores p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #222;
+  font-size: 1.2rem;
+  margin-bottom: 10px; }
+
+.contenedor {
+  width: 80%;
+  margin: auto; }
+
+header {
+  padding: 10px;
+  background: #cc6699; }
+  header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .contenedor h1 {
+      color: #fff;
+      font-family: "Pacifico", cursive;
+      font-size: 4rem; }
+    header .contenedor nav ul li {
+      display: inline-block;
+      margin-left: 15px; }
+      header .contenedor nav ul li a {
+        font-family: "Source Sans Pro", sans-serif;
+        color: #fff;
+        font-size: 1.4rem; }
+
+.intro {
+  padding: 50px 0;
+  background: #e2e2e2; }
+  .intro a {
+    display: inline-block;
+    background: #cc6699;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 20px; }
+
+.variables {
+  padding: 50px 0;
+  background: #003366; }
+  .variables h2 {
+    color: #fff; }
+  .variables p {
+    color: #fff; }
+  .variables .ejemplo {
+    background: #e2e2e2;
+    padding: 10px 20px 3px;
+    display: block;
+    border-radius: 5px;
+    width: 220px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center; }
+    .variables .ejemplo p {
+      color: #222; }
+  .variables a {
+    display: inline-block;
+    background: #cc6699;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 50px; }
+
+.nesting {
+  padding: 50px 0;
+  background: #e2e2e2; }
+  .nesting .ejemplo {
+    background: #828282;
+    padding: 10px 20px 3px;
+    display: block;
+    border-radius: 5px;
+    width: 220px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 100%; }
+    .nesting .ejemplo p {
+      color: #fff; }
+  .nesting a {
+    display: inline-block;
+    background: #cc6699;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    background: #cc6699; }
+
+.partials {
+  padding: 50px 0;
+  background: #cc6699; }
+  .partials h2 {
+    color: #fff; }
+  .partials p {
+    color: #fff;
+    margin-bottom: 5px; }
+  .partials a {
+    display: inline-block;
+    background: #cc6699;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    background: #003366; }
+
+.extend {
+  padding: 50px 0;
+  background: #e2e2e2; }
+  .extend a {
+    display: inline-block;
+    background: #cc6699;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    background: #cc6699; }
+
+.mixins {
+  padding: 50px 0;
+  background: #003366; }
+  .mixins h2 {
+    color: #fff; }
+  .mixins p {
+    color: #fff; }
+  .mixins a {
+    display: inline-block;
+    background: #cc6699;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    background: #cc6699; }
+
+.operadores {
+  padding: 50px 0;
+  background: #cc6699; }
+  .operadores h2 {
+    color: #fff; }
+  .operadores p {
+    color: #fff;
+    margin-bottom: 5px; }
+  .operadores .ejemplo {
+    background: #e2e2e2;
+    padding: 10px 20px 3px;
+    display: block;
+    border-radius: 5px;
+    width: 220px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px; }
+    .operadores .ejemplo p {
+      color: #222; }
+  .operadores a {
+    display: inline-block;
+    background: #cc6699;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    background: #003366; }

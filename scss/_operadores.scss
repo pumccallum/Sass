@@ -1,0 +1,37 @@
+.operadores {
+	padding: 50px 0;
+	background: $colorSass;
+
+	h2 {
+		@extend %titulos;
+		color:$blanco;
+	}
+
+	p {
+		@extend %parrafos;
+		color: $blanco;
+		margin-bottom: 5px;
+	}
+
+	.ejemplo {
+		background: $colorSass3;
+		padding: 10px 20px 3px;
+		display: block;
+		border-radius:5px;
+		width:220px;
+		margin:auto;
+		margin-top:20px;
+		text-align:center;
+		margin-bottom: 20px;
+		
+		p {
+			color: $negro;
+		}
+	}
+
+	a {
+		@include botton(30px, 5px);
+		background: $colorSass2;
+	}
+
+}

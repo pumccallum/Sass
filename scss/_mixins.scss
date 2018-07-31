@@ -1,0 +1,12 @@
+@mixin botton($mt, $br) {
+	display: inline-block;
+	background: $colorSass;
+	padding: 10px 20px;
+	color: $blanco;
+	border-radius: $br;
+	font-family: $fuentePrincipal;
+	text-transform: uppercase;
+	font-size:1rem;
+	letter-spacing:2px;
+	margin-top: $mt;
+}

@@ -1,0 +1,34 @@
+header	{
+	padding: 10px;
+	background: $colorSass;
+
+	.contenedor {
+		display:flex;
+		justify-content:space-between;
+		align-items: center;
+
+		h1 {
+			color: $blanco;
+			font-family: $fuenteSass;
+			font-size: 4rem;
+
+		}//Cierra h1
+
+		nav {
+			ul {
+				li {
+					display: inline-block;
+					margin-left:15px;
+
+					a {
+						font-family: $fuentePrincipal;
+						color: $blanco;
+						font-size: 1.4rem;
+
+					}//Cierra a
+				}//Cierra li
+			}//Cierra ul
+		}//Cierr nav
+	}//Cierra contenedor
+}//Cierra header
+

@@ -1,0 +1,36 @@
+.variables {
+	padding: 50px 0;
+	background: $colorSass2;
+
+	h2 {
+		@extend %titulos;
+		color: $blanco;
+	}//Cierra h2
+
+	p {
+		@extend %parrafos;
+		color: $blanco;
+	}//Cierra p
+
+	.ejemplo {
+		background: $colorSass3;
+		padding: 10px 20px 3px;
+		display: block;
+		border-radius:5px;
+		width:220px;
+		margin:auto;
+		margin-top:20px;
+		text-align:center;
+		
+		p {
+			color: $negro;
+		}//Cierra p
+
+	
+	}//Cierra .ejemplo
+
+	a {
+		@include botton(50px, 5px);
+	}//Cierra a
+
+}//Cierra .variables 
